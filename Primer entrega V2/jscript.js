@@ -2,7 +2,7 @@ class Persona{
     constructor(nombre, apellido, email) {
         this.nombre = nombre;
         this.apellido = apellido;
-        this.email  = email;
+        this.email = email;
     }
 
     concatenar() {
@@ -13,8 +13,8 @@ class Persona{
 class Evento{
     constructor(fecha, cotizacion, cliente) {
         this.fecha = fecha;
-        this.cotizacion   = cotizacion;
-        this.cliente  = cliente;
+        this.cotizacion = cotizacion;
+        this.cliente = cliente;
     }
 
     concatenar() {
