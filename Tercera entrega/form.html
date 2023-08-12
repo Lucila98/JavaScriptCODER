@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <meta charset= "UTF-8"/>
+        <link rel="stylesheet" href="styles/style.css" />
+        <title>NigroPH</title>
+    </head>
+    <body>
+        <h2>Contactanos!</h2>
+        <p>Completá el siguiente formulario para recibir una propuesta personalizada.</p>
+
+<form id="myForm">
+    <div class="nomProspect">
+        <label for="nombre" id="nombre">Nombre:</label>
+        <input type="text" id="nombre" placeholder="nombre" required/>
+    </div>
+
+    <div class="apProspect">
+        <label for="apellido" id="apelllido">Apellido:</label>
+        <input type="text" id="apellido" placeholder="apellido" required/>
+    </div>
+
+    <div class="email">
+        <label for="mail" id="mail">Mail:</label>
+        <input type="text" id="mail" placeholder="mail" required/>
+        <span class="textoChico">Formato: nombre@dominio.com</span>
+    </div>
+
+    <div class="fecha">
+    <label for="fecha" id="fecha">Fecha del evento:</label>
+    <input type="date" id="fecha">
+    </div>
+
+    
+    <div class="horas">
+    <label for="cant_horas" id="cant_horas">Cantidad de horas:</label>
+    <input type="number" id="cant_horas" required>
+    </div>
+
+    <div class="tipoEvento">
+    <label for="tipo_evento" id="tipo_evento">Tipo de evento: </label>
+            <select>
+                <option value="1">Recital</option>
+                <option value="2">Ensayo</option>
+                <option value="3">Muestra</option>
+                <option value="4" selected>Otro..</option>
+            </select>
+    </div>
+
+    <div class="otro">
+    <p>En caso de seleccionar 'Otro'</p>
+    <label for="otro" id="otro">Especifique:</label>
+    <input type="text" id="otro">
+    </div>
+
+    <input type="button" value="Validar" onclick="enviarDatos();"/>
+
+    <input type="submit" value="Enviar" class="btn success"/>
+    <input type="reset" value="Limpiar datos" class="btn info">
+</form>
+<script src="./js/jscript.js"></script>
+</body>
+</html>
