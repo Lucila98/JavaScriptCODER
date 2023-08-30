@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<head>
+    <meta charset= "UTF-8"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="css/slides.css"/>
+    <link rel="stylesheet" href="css/footer.css"/>
+    <link rel="stylesheet" href="css/reviews.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    
+    <title>Entrega LN</title>
+
+</head>
+
+<body>
+    <section>
+      <div class="title">
+          <h2>· MaleNigro PH ·</h2>
+      </div>
+
+      <div class="about-center section-center"></div>
+      <article class="about-img">
+          <img src="img/foto1.jpg">
+      </article>
+      <article class="about">
+          <div class="btn-container">
+              <button class="tab-btn active" data-id="galeria">Galería</button>
+              <button class="tab-btn" data-id="comentarios">Comentarios</button>
+              <button class="tab-btn" data-id="sobremi">Sobre mí..</button>
+          </div>
+      </article>
+
+      <article class="about-content">
+          <div class="content active" id="galeria">
+              <h4>Galería</h4>
+              <div class="slideshow-container" id="galeria">
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 4</div>
+                  <img src="img/foto2.jpg" style="width:100%">
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 4</div>
+                  <img src="img/foto3.jpg" style="width:100%">
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 4</div>
+                  <img src="img/foto5.jpg" style="width:100%">
+                </div>
+          
+                <div class="mySlides fade">
+                  <div class="numbertext">4 / 4</div>
+                  <img src="img/foto6.jpg" style="width:100%">
+                </div>
+          
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <br>
+          
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+              </div>
+            
+          </div>
+
+          <div class="content" id="comentarios">
+              <h4>Comentarios</h4>
+              <section class="container">
+
+                <article class="review">
+                  <div class="img-container">
+                    <img src="person-1.jpeg" id="person-img" alt="" />
+                  </div>
+                  <h4 id="singer">Nombre</h4>
+                  <p id="band">Banda</p>
+                  <p id="info">
+                    Comentario
+                  </p>
+                  
+                  <div class="button-container">
+                    <button class="prev-btn">
+                      <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="next-btn">
+                      <i class="fas fa-chevron-right"></i>
+                    </button>
+                  </div>
+                 
+                  <button class="random-btn">RANDOM</button>
+                </article>
+              </section>
+          </div>
+
+          <div class="content" id="sobremi">
+            <h4>Sobre mí..</h4>
+            <p>
+              Mi nombre es Malena Nigro, tengo 18 años y le saco fotos a artistas y bandas musicales. 
+              Me gusta mucho jugar con las luces y las expresiones. 
+              Disfruto esto que hago, siempre intento fotografiar a artistas que suenan en mis playlists. 
+              Conozco su estética entonces intento capturar lo mas similar a ella. 
+            </p>
+        </div>
+      </article>
+  </section>
+
+
+    <script src="js/carrousel.js"></script>
+    <script src="js/about.js"></script>
+    <script src="js/reviews.js"></script>
+</body>
+
+<footer class="footer">
+  <ul>
+    <li>
+      <a href="#">
+        <i class="fa fa-instagram" onclick="location.href='https://www.instagram.com/male_nigro/'"></i>
+      </a>
+  </ul>
+</footer>
+</html>
